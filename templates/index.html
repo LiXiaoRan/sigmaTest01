@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../static/js/sigma1.2.0build/build/sigma.js"></script>
+    <script type="text/javascript" src="../static/js/sigma1.2.0build/build/plugins/sigma.parsers.gexf.min.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+    sigma.parsers.gexf(
+        'static/files/arctic.gexf',
+        { // Here is the ID of the DOM element that
+            // will contain the graph:
+            container: container
+        },
+        function (s) {
+            // This function will be executed when the
+            // graph is displayed, with "s" the related
+            // sigma instance.
+        }
+    );
+
+
+</script>
+</body>
+</html>
